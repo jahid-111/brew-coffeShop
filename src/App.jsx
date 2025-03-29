@@ -60,6 +60,34 @@ function App() {
           </button>
         </div>
       </main>
+      <footer className=" bg-gray-400">
+        <section className=" flex justify-around items-center  gap-4">
+          <div className="border w-6/12  flex flex-col justify-around items-start gap-4">
+            <h3 className=" text-3xl">COME VISIT US</h3>
+
+            <p>
+              500 TERRY FRANCINE STREET
+              <br />
+              SAN FRANCISCO, CA 94158
+            </p>
+            <ul>
+              <li>MON - FRI: 8AM - 8PM</li>
+              <li>SAT - SUN: 10AM - 6PM</li>
+            </ul>
+            <ul>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+          <div className="border w-6/12 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            repudiandae labore, officiis sit corrupti fuga explicabo,
+            dignissimos, optio esse nihil cupiditate a hic provident saepe
+            facere ab laborum fugit tenetur.
+          </div>
+        </section>
+      </footer>
     </>
   );
 }
