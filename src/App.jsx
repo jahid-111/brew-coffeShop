@@ -53,6 +53,12 @@ function App() {
             ))}
           </CardCarousel>
         </section>
+
+        <div className="py-10 flex justify-center">
+          <button className="text-4xl border py-5 px-24 font-medium bg-amber-50 text-gray-700 hover:bg-green-600 hover:text-white cursor-pointer transition-all duration-300 ease-in-out">
+            Shop All
+          </button>
+        </div>
       </main>
     </>
   );
