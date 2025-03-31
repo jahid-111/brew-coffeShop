@@ -60,31 +60,70 @@ function App() {
           </button>
         </div>
       </main>
-      <footer className=" bg-gray-400">
-        <section className=" flex justify-around items-center  gap-4">
-          <div className="border w-6/12  flex flex-col justify-around items-start gap-4">
-            <h3 className=" text-3xl">COME VISIT US</h3>
+      <footer className="px-6 xl:px-44 bg-blue-100 text-gray-800">
+        <section className="flex flex-col md:flex-row justify-around items-start gap-10 md:gap-4 lg:gap-10">
+          {/* Visit Us Section */}
+          <div className="w-full md:w-1/2 flex flex-col text-justify border">
+            <h3 className="text-2xl md:text-3xl mb-6 md:mb-10">
+              COME VISIT US
+            </h3>
 
-            <p>
-              500 TERRY FRANCINE STREET
-              <br />
-              SAN FRANCISCO, CA 94158
-            </p>
-            <ul>
-              <li>MON - FRI: 8AM - 8PM</li>
-              <li>SAT - SUN: 10AM - 6PM</li>
-            </ul>
-            <ul>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Twitter</li>
-            </ul>
+            <div className="mb-6 md:mb-10">
+              <p>500 TERRY FRANCINE STREET</p>
+              <p>SAN FRANCISCO, CA 94158</p>
+            </div>
+
+            <div className="mb-6 md:mb-10">
+              <p className="mb-2 md:mb-4">MON - FRI: 8AM - 8PM</p>
+              <p className="mb-2 md:mb-4">SATURDAY: 9AM - 7PM</p>
+              <p>SUNDAY: 9AM - 8PM</p>
+            </div>
+
+            <div className="mb-6 md:mb-10">
+              <p className="mb-2 md:mb-4">INSTAGRAM</p>
+              <p className="mb-2 md:mb-4">FACEBOOK</p>
+              <p>TWITTER</p>
+            </div>
           </div>
-          <div className="border w-6/12 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            repudiandae labore, officiis sit corrupti fuga explicabo,
-            dignissimos, optio esse nihil cupiditate a hic provident saepe
-            facere ab laborum fugit tenetur.
+
+          {/* Contact Us Section */}
+          <div className="w-full md:w-1/2 flex flex-col items-start border ">
+            <div className="mb-8 md:mb-12">
+              <h3 className="text-2xl md:text-3xl font-medium mb-8 md:mb-16 text-start">
+                TALK TO US
+              </h3>
+
+              <div className="mb-6 md:mb-10 text-start">
+                <p className="mb-2">INFO@MYSITE.COM</p>
+                <p>123 456 6780</p>
+              </div>
+            </div>
+
+            <div className="mb-6 md:mb-10 text-start w-full">
+              <p className="mb-4 md:mb-8">Subscribe to our Newsletter *</p>
+              <div className="flex flex-col sm:flex-row gap-4 w-full">
+                <div className=" w-80">
+                  <input
+                    type="email"
+                    className="border border-gray-400 bg-blue-100 h-12 w-full flex-grow px-4"
+                    placeholder="Your email"
+                  />
+                </div>
+                <button className="bg-gray-600 text-white px-5 py-2 sm:py-0 border-gray-100 h-12 text-lg sm:text-xl whitespace-nowrap">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <input
+                type="checkbox"
+                className="mt-1 h-4 w-4 border border-black"
+              />
+              <p className="text-sm md:text-base">
+                Yes, subscribe me to your newsletter. *
+              </p>
+            </div>
           </div>
         </section>
       </footer>
