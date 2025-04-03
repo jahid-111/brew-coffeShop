@@ -4,6 +4,8 @@ import HeroSection from "./components/common/HeroSection";
 import i from "./assets/images/hero/image.png";
 import Card from "./components/common/reuse/Card";
 import CardCarousel from "./components/common/reuse/CardCarousel";
+import VisitDetails from "./components/common/VisitDetails";
+import Contact from "./components/common/Contact";
 
 function App() {
   return (
@@ -60,72 +62,44 @@ function App() {
           </button>
         </div>
       </main>
-      <footer className="px-6 xl:px-44 bg-blue-100 text-gray-800">
+      <footer className="px-6 xl:px-44 py-10 bg-blue-100 text-gray-800">
         <section className="flex flex-col md:flex-row justify-around items-start gap-10 md:gap-4 lg:gap-10">
           {/* Visit Us Section */}
-          <div className="w-full md:w-1/2 flex flex-col text-justify border">
-            <h3 className="text-2xl md:text-3xl mb-6 md:mb-10">
-              COME VISIT US
-            </h3>
-
-            <div className="mb-6 md:mb-10">
-              <p>500 TERRY FRANCINE STREET</p>
-              <p>SAN FRANCISCO, CA 94158</p>
-            </div>
-
-            <div className="mb-6 md:mb-10">
-              <p className="mb-2 md:mb-4">MON - FRI: 8AM - 8PM</p>
-              <p className="mb-2 md:mb-4">SATURDAY: 9AM - 7PM</p>
-              <p>SUNDAY: 9AM - 8PM</p>
-            </div>
-
-            <div className="mb-6 md:mb-10">
-              <p className="mb-2 md:mb-4">INSTAGRAM</p>
-              <p className="mb-2 md:mb-4">FACEBOOK</p>
-              <p>TWITTER</p>
-            </div>
-          </div>
+          <VisitDetails />
 
           {/* Contact Us Section */}
-          <div className="w-full md:w-1/2 flex flex-col items-start border ">
-            <div className="mb-8 md:mb-12">
-              <h3 className="text-2xl md:text-3xl font-medium mb-8 md:mb-16 text-start">
-                TALK TO US
-              </h3>
-
-              <div className="mb-6 md:mb-10 text-start">
-                <p className="mb-2">INFO@MYSITE.COM</p>
-                <p>123 456 6780</p>
-              </div>
-            </div>
-
-            <div className="mb-6 md:mb-10 text-start w-full">
-              <p className="mb-4 md:mb-8">Subscribe to our Newsletter *</p>
-              <div className="flex flex-col sm:flex-row gap-4 w-full">
-                <div className=" w-80">
-                  <input
-                    type="email"
-                    className="border border-gray-400 bg-blue-100 h-12 w-full flex-grow px-4"
-                    placeholder="Your email"
-                  />
-                </div>
-                <button className="bg-gray-600 text-white px-5 py-2 sm:py-0 border-gray-100 h-12 text-lg sm:text-xl whitespace-nowrap">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <input
-                type="checkbox"
-                className="mt-1 h-4 w-4 border border-black"
-              />
-              <p className="text-sm md:text-base">
-                Yes, subscribe me to your newsletter. *
-              </p>
-            </div>
-          </div>
+          <Contact />
         </section>
+
+        <div className=" mt-16">
+          <div className="flex flex-col items-center justify-center text-center space-y-6 p-6">
+            <ul className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-4 text-sm font-medium">
+              <li className="px-4 py-2 rounded-md">TERMS & CONDITIONS</li>
+              <li className="px-4 py-2 rounded-md">PRIVACY POLICY</li>
+              <li className="px-4 py-2 rounded-md">SHIPPING POLICY</li>
+              <li className="px-4 py-2 rounded-md">REFUND POLICY</li>
+              <li className="px-4 py-2 rounded-md col-span-2 md:col-span-1">
+                COOKIE POLICY
+              </li>
+            </ul>
+            <p className="text-sm text-gray-600">
+              © 2035 by <span className="font-semibold">BREW.</span> Powered and
+              secured by{" "}
+              <a
+                href="#"
+                className="underline text-blue-600 hover:text-blue-800"
+              >
+                Wix
+              </a>
+            </p>
+          </div>
+        </div>
+        <code>
+          Code by{" "}
+          <a target="_blank" href="https://github.com/jahid-111">
+            <span className=" text-blue-600 underline"> Jahid</span>
+          </a>
+        </code>
       </footer>
     </>
   );
